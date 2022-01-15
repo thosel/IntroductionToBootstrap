@@ -1,14 +1,306 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./css/theme/bootstrap.min.css" rel="stylesheet" />
-    <link href="./css/bootstrap/bootstrap.min.css" rel="stylesheet" />
-    <title>Introduction to Bootstrap</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            rel="stylesheet"
+            />
+        <link href="./css/theme/bootstrap.min.css" rel="stylesheet" />
+        <link href="./css/site.css" rel="stylesheet" />
+        <title>Introduction to Bootstrap</title>
+    </head>
+    <body class="container">
+        <div id="menu-bar" class="row">
+            <div>
+                <header class="container bg-dark fixed-top">
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                        <img
+                        src="./images/logo.png"
+                        width="50px"
+                        height="50px"
+                        alt="Logo"
+                        class="mr-2"
+                    />
+                        <a class="navbar-brand" href="#menu-bar">Introduction to
+                            Bootstrap</a>
+                        <button
+                            class="navbar-toggler"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#menu-bar-toggler"
+                            aria-controls="menu-bar-toggler"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div
+                            class="collapse navbar-collapse"
+                            id="menu-bar-toggler">
+                            <ul class="navbar-nav mr-auto mt-2 mt-lg-0 w-100 justify-content-end">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#menu-bar">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#marketing-area">Get Bootstrap</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#content">Information</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#contact-form">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </header>
+            </div>
+        </div>
+        <div class="row">
+            <div id="carousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li
+                        data-target="#carousel"
+                        data-slide-to="0"
+                        class="active"></li>
+                    <li data-target="#carousel" data-slide-to="1"></li>
+                    <li data-target="#carousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active carousel-image1">
+                        <div class="container">
+                            <div class="carousel-caption">
+                                <h1>Cool website styling</h1>
+                                <p>
+                                    Let us show you an easy path to get there!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item carousel-image2">
+                        <div class="container">
+                            <div class="carousel-caption text-left">
+                                <h1>Why, you ask?</h1>
+                                <p>
+                                    Because this path will save you a lot of
+                                    time.
+                                </p>
+                                <p>
+                                    <a
+                                        class="btn btn-lg btn-primary"
+                                        href="https://getbootstrap.com/"
+                                        target="_blank"
+                                        role="button">Get Bootstrap!</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item carousel-image3">
+                        <div class="container">
+                            <div class="carousel-caption text-right">
+                                <h1>Bootstrap</h1>
+                                <p>
+                                    Gets you going fast and kicks you off into
+                                    even greater adventures.
+                                </p>
+                                <p>
+                                    <a
+                                        class="btn btn-lg btn-primary"
+                                        href="https://getbootstrap.com/"
+                                        target="_blank"
+                                        role="button">Get Bootstrap!</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a
+                    class="carousel-control-prev"
+                    href="#carousel"
+                    role="button"
+                    data-slide="prev">
+                    <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a
+                    class="carousel-control-next"
+                    href="#carousel"
+                    role="button"
+                    data-slide="next">
+                    <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <aside id="marketing-area">
+                    <h2>Build fast, responsive sites with Bootstrap</h2>
+                    <p>
+                        Quickly design and customize responsive mobile-first
+                        sites with Bootstrap, the world’s most popular front-end
+                        open source toolkit, featuring Sass variables and
+                        mixins, responsive grid system, extensive prebuilt
+                        components, and powerful JavaScript plugins.
+                    </p>
+                    <a href="https://getbootstrap.com/" target="_blank">Get it
+                        now</a>
+                </aside>
+            </div>
+        </div>
+
+        <hr />
+
+        <div class="row h-100">
+            <div id="sidebar-menu" class="col-3 h-100 py-2">
+                <nav class="nav nav-pills flex-column">
+                    <a class="nav-item nav-link" href="#">Docs</a>
+                    <a class="nav-item nav-link" href="#">Examples</a>
+                    <a class="nav-item nav-link" href="#">Icons</a>
+                    <a class="nav-item nav-link" href="#">Themes</a>
+                </nav>
+            </div>
+            <div id="content" class="col-9 h-100 p-4">
+                <main class="row">
+                    <article class="col">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Incidunt dignissimos ullam error dolorem
+                        perferendis doloribus at suscipit, deleniti odio alias
+                        porro ipsum officia nisi veniam voluptatibus
+                        exercitationem, expedita accusamus consequuntur dolorum
+                        ab quis? Dolorum consequatur debitis esse aperiam labore
+                        ullam provident voluptas reprehenderit minus nesciunt
+                        magni molestiae minima officia consectetur corporis
+                        officiis tempore voluptatum quasi sapiente, assumenda
+                        quis! Repellat tempore, quaerat earum enim eveniet fuga
+                        quis dolorum optio nisi facere sequi iusto! Delectus
+                        iste nulla, impedit dolor quibusdam reiciendis, corrupti
+                        eaque quas, fugiat at aut eos laborum voluptate modi?
+                        Fugiat pariatur repellat voluptates corporis aliquam
+                        inventore deleniti tempore ducimus perferendis!
+                    </article>
+                    <article class="col">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Ea vel sed expedita, doloremque dicta tempora id
+                        voluptatem ad accusantium rerum deleniti eaque aperiam
+                        enim est maiores optio fuga asperiores, iusto voluptas
+                        reprehenderit, quibusdam quam commodi. Omnis porro,
+                        ullam eos explicabo ut magni accusamus! Possimus,
+                        dolorum repudiandae ex cumque quod, magni doloribus
+                        officiis illum expedita voluptatum ab excepturi, esse
+                        itaque culpa? Cum porro quaerat assumenda ea, doloribus
+                        provident soluta voluptate aut maxime quidem repellat
+                        praesentium! Perferendis!
+                    </article>
+                </main>
+            </div>
+        </div>
+
+        <hr />
+
+        <div class="row h-100">
+            <div id="contact-form" class="col-7 h-100">
+                <h2 class="display-6 mt-2">Send us a message!</h2>
+                <form action="./index.html" method="post" class="m-4">
+                    <div class="form-group row">
+                        <label for="name" class="col-lg-4 col-form-label">
+                            Name:
+                        </label>
+                        <div class="col-lg-8">
+                            <input
+                                type="text"
+                                class="form-control form-control-sm"
+                                id="name"
+                                required
+                                />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label
+                            for="email-address"
+                            class="col-lg-4 col-form-label">
+                            Email address:
+                        </label>
+                        <div class="col-lg-8">
+                            <input
+                                type="text"
+                                class="form-control form-control-sm"
+                                id="email-address"
+                                required
+                                />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label
+                            for="telephone-number"
+                            class="col-lg-4 col-form-label">
+                            Telephone number:
+                        </label>
+                        <div class="col-lg-8">
+                            <input
+                                type="text"
+                                class="form-control form-control-sm"
+                                id="telephone-number"
+                                required
+                                />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="message" class="col-lg-4 col-form-label">
+                            Message:
+                        </label>
+                        <div class="col-lg-8">
+                            <textarea
+                                type="text"
+                                class="form-control form-control-sm"
+                                id="message"
+                                required></textarea>
+                        </div>
+                    </div>
+                    <button
+                        type="submit"
+                        class="form-control form-control-sm btn btn-success
+                        mb-2">
+                        Submit
+                    </button>
+                    <button
+                        type="reset"
+                        class="form-control form-control-sm btn btn-danger">
+                        Reset
+                    </button>
+                </form>
+            </div>
+            <div class="col-5 h-100">
+                <img
+                    src="./images/message.jpg"
+                    alt="Love lock"
+                    class="rounded image-fluid mx-auto d-block"
+                    width="100%"
+                    />
+            </div>
+        </div>
+        <div class="row h-100">
+            <div id="footer" class="col-12 h-100">
+                <footer
+                    id="footer"
+                    class="container bg-dark fixed-bottom text-center">
+                    <span> &copy;thosel </span>
+                    <br />
+                    <a href="#menu-bar">Back to top</a>
+                </footer>
+            </div>
+        </div>
+        <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    </body>
 </html>
