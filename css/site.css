@@ -1,0 +1,40 @@
+html {
+    scroll-padding-top: 80px;
+}
+
+body {
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.carousel {
+    margin-bottom: 4rem;
+}
+
+.carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+}
+
+.carousel-item {
+    height: 24rem;
+    max-width: 100vw;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.carousel-image1 {
+    box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.3);
+    background-image: url("../images/carousel1.jpg");
+}
+
+.carousel-image2 {
+    box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.3);
+    background-image: url("../images/carousel2.jpg");
+}
+
+.carousel-image3 {
+    box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.3);
+    background-image: url("../images/carousel3.jpg");
+}
